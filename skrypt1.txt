@@ -1,0 +1,14 @@
+#!/bin/sh
+clear
+
+LC_ALL=C
+
+data=$(date)
+
+if [$data == [*"Sun"* || *"Sat"*]]
+then
+	echo "Jest weekend"
+else
+	echo "Dzien roboczy"
+fi
+
